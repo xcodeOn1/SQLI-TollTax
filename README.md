@@ -22,7 +22,7 @@ debian
 ----
 # SQLI BLIND   :
 
-The request is designed to update the details of a user (likely with ID 1). The most notable part of the request is the SQL injection payload in the firstname field, which is a test for blind SQL injection vulnerabilities. If the server responds with a delay of 5 seconds after processing this request, it indicates that the application is vulnerable to blind SQL injection.
+The application's endpoint /classes/Users.php?f=save is vulnerable to blind SQL injection. By injecting a payload into the firstname field, specifically Adminstrator' AND (SELECT 2171 FROM (SELECT(SLEEP(5)))hgdO)-- EnP, an attacker can introduce a conditional delay in the SQL query. If the server responds with a delay of approximately 5 seconds after processing this request, it confirms the vulnerability. This vulnerability can allow attackers to infer information about the database and potentially extract data or perform administrative operations. It's recommended to sanitize all user inputs and use prepared statements to prevent such attacks.
 # POC [debian]:
 
 1- login as admin and go to profile [http://10.0.30.0:1337/admin/?page=user] .
