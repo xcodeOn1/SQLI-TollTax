@@ -110,6 +110,7 @@ Content-Type: application/octet-stream
 
 ![Drag Racing](https://github.com/xcodeOn1/SQLI-TollTax/blob/main/s1.png)
 
+![Drag Racing](https://github.com/xcodeOn1/SQLI-TollTax/blob/main/s2.png)
 
  # Tested  
 
