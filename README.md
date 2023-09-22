@@ -1,7 +1,7 @@
 # Vault
 
 # Exploit Title: 
-Blind SQLI in (Toll Tax Management System)
+SQLI Blind (Toll Tax Management System)
 # Date: 
 22/09/2023
 # Exploit Author: 
