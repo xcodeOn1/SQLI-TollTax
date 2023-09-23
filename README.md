@@ -1,4 +1,3 @@
-# Vault
 
 # Exploit Title: 
 SQLI Blind (Toll Tax Management System)
